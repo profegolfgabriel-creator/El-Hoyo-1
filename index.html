@@ -6,6 +6,8 @@
 
 <title>El Hoyo 1 | Gabriel Licera</title>
 
+<meta name="description" content="EL HOYO 1. No es un libro de golf. Es un libro de vida. Una historia sobre el fracaso, la amistad, el amor, las decisiones y la transformación.">
+
 <meta property="og:title" content="EL HOYO 1 | Gabriel Licera">
 <meta property="og:description" content="No es un libro de golf. Es un libro de vida.">
 <meta property="og:url" content="https://profegolfgabriel-creator.github.io/El-Hoyo-1/">
@@ -13,6 +15,7 @@
 <meta property="og:type" content="website">
 
 <style>
+
 *{
   box-sizing:border-box;
 }
@@ -30,9 +33,13 @@ body{
 }
 
 .wrap{
-  width:min(1100px,92%);
+  width:min(1080px,92%);
   margin:auto;
 }
+
+/* =========================
+   HERO
+========================= */
 
 .hero{
   min-height:100vh;
@@ -40,9 +47,9 @@ body{
   align-items:center;
   justify-content:center;
   text-align:center;
-  padding:55px 20px 70px;
+  padding:60px 20px 80px;
   background:
-    radial-gradient(circle at 50% 25%,rgba(211,158,61,.18),transparent 35%),
+    radial-gradient(circle at 50% 20%,rgba(211,158,61,.18),transparent 35%),
     linear-gradient(180deg,#071116 0%,#0b1820 60%,#071116 100%);
 }
 
@@ -51,27 +58,28 @@ body{
   max-width:1000px;
 }
 
+.eyebrow{
+  color:#d9a441;
+  text-transform:uppercase;
+  letter-spacing:4px;
+  font-size:14px;
+  font-weight:bold;
+  margin-bottom:28px;
+}
+
 .cover{
   width:min(330px,72vw);
   margin:0 auto 42px;
   display:block;
   border-radius:6px;
   box-shadow:
-    0 25px 60px rgba(0,0,0,.65),
-    0 0 40px rgba(221,168,68,.10);
-}
-
-.eyebrow{
-  color:#d9a441;
-  text-transform:uppercase;
-  letter-spacing:4px;
-  font-size:14px;
-  margin-bottom:22px;
+    0 25px 60px rgba(0,0,0,.55),
+    0 0 45px rgba(211,158,61,.12);
 }
 
 h1{
   margin:0;
-  font-size:clamp(65px,14vw,145px);
+  font-size:clamp(64px,14vw,145px);
   line-height:.78;
   letter-spacing:-5px;
   text-transform:uppercase;
@@ -86,36 +94,23 @@ h1 span{
   max-width:760px;
   margin:42px auto 0;
   font-size:clamp(25px,4vw,42px);
-  line-height:1.25;
+  line-height:1.2;
   font-weight:bold;
 }
 
 .sublead{
-  max-width:700px;
-  margin:25px auto 0;
+  max-width:720px;
+  margin:28px auto 0;
   font-size:20px;
   color:#ddd6ca;
 }
 
-.hero-button{
-  display:inline-block;
-  margin-top:35px;
-  padding:18px 30px;
-  background:#dda844;
-  color:#101010;
-  text-decoration:none;
-  border-radius:7px;
-  font-size:19px;
-  font-weight:bold;
-  box-shadow:0 10px 30px rgba(0,0,0,.35);
-}
-
-.hero-button:hover{
-  background:#edbb5c;
-}
+/* =========================
+   SECTIONS
+========================= */
 
 section{
-  padding:90px 0;
+  padding:95px 0;
 }
 
 .card{
@@ -127,8 +122,8 @@ section{
 h2{
   color:#dda844;
   font-size:clamp(34px,6vw,58px);
-  line-height:1.15;
-  margin:0 0 25px;
+  line-height:1.12;
+  margin:0 0 28px;
 }
 
 p{
@@ -136,15 +131,61 @@ p{
   color:#ddd7ce;
 }
 
+.intro{
+  background:#081319;
+}
+
 .quote{
-  margin:60px auto;
-  padding:40px 25px;
+  margin:58px auto;
+  padding:38px 25px;
   border-top:1px solid rgba(221,168,68,.45);
   border-bottom:1px solid rgba(221,168,68,.45);
   font-size:clamp(25px,4vw,38px);
+  line-height:1.35;
   font-style:italic;
   color:#f0e8dc;
 }
+
+/* =========================
+   TEMAS
+========================= */
+
+.themes{
+  background:
+    linear-gradient(180deg,#071116 0%,#0a171d 100%);
+}
+
+.theme-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:20px;
+  max-width:850px;
+  margin:45px auto 0;
+}
+
+.theme{
+  padding:28px 24px;
+  border:1px solid rgba(221,168,68,.18);
+  border-radius:8px;
+  background:rgba(255,255,255,.025);
+  text-align:center;
+}
+
+.theme strong{
+  display:block;
+  color:#dda844;
+  font-size:23px;
+  margin-bottom:8px;
+}
+
+.theme span{
+  color:#c9c3ba;
+  font-size:16px;
+}
+
+/* =========================
+   AUTHOR
+========================= */
 
 .about{
   background:#0b1920;
@@ -155,6 +196,16 @@ p{
   margin:auto;
   text-align:center;
 }
+
+.author-name{
+  font-size:clamp(40px,7vw,68px);
+  color:#f1eadf;
+  margin-bottom:25px;
+}
+
+/* =========================
+   FINAL CTA
+========================= */
 
 .final{
   min-height:75vh;
@@ -170,6 +221,11 @@ p{
   font-size:clamp(42px,8vw,76px);
 }
 
+.final-text{
+  max-width:650px;
+  margin:0 auto;
+}
+
 .cta{
   display:inline-block;
   margin-top:35px;
@@ -178,7 +234,7 @@ p{
   color:#101010;
   text-decoration:none;
   font-family:Georgia,serif;
-  font-size:22px;
+  font-size:21px;
   font-weight:bold;
   border-radius:8px;
   transition:.2s;
@@ -191,7 +247,7 @@ p{
 }
 
 .contact{
-  margin-top:35px;
+  margin-top:32px;
   font-size:16px;
   color:#aaa49b;
 }
@@ -204,21 +260,26 @@ footer{
   border-top:1px solid rgba(255,255,255,.08);
 }
 
-@media(max-width:600px){
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:650px){
 
   .hero{
     min-height:100svh;
-    padding:45px 18px;
-  }
-
-  .cover{
-    width:min(280px,70vw);
-    margin-bottom:35px;
+    padding:48px 18px 65px;
   }
 
   .eyebrow{
     font-size:11px;
     letter-spacing:2.5px;
+    margin-bottom:24px;
+  }
+
+  .cover{
+    width:min(285px,75vw);
+    margin-bottom:38px;
   }
 
   h1{
@@ -228,11 +289,12 @@ footer{
 
   .lead{
     font-size:29px;
-    margin-top:38px;
+    margin-top:36px;
   }
 
   .sublead{
     font-size:17px;
+    line-height:1.55;
   }
 
   section{
@@ -252,20 +314,39 @@ footer{
     padding:30px 15px;
   }
 
-  .hero-button,
+  .theme-grid{
+    grid-template-columns:1fr;
+    gap:14px;
+  }
+
+  .theme{
+    padding:23px 18px;
+  }
+
+  .theme strong{
+    font-size:21px;
+  }
+
   .cta{
     display:block;
     padding:20px 15px;
     font-size:19px;
   }
+
 }
+
 </style>
 </head>
 
 <body>
 
+<!-- =========================
+     PORTADA
+========================= -->
+
 <header class="hero">
-  <div class="wrap hero-content">
+
+  <div class="hero-content">
 
     <div class="eyebrow">
       Una historia real · Gabriel Licera
@@ -274,7 +355,8 @@ footer{
     <img
       class="cover"
       src="https://raw.githubusercontent.com/profegolfgabriel-creator/El-Hoyo-1/main/5e7e7069-c8b5-4343-98de-b4c85c12675a.jpg"
-      alt="Portada del libro El Hoyo 1">
+      alt="Portada del libro El Hoyo 1 de Gabriel Licera"
+    >
 
     <h1>
       El
@@ -292,21 +374,21 @@ footer{
       las decisiones y la transformación.
     </div>
 
-    <a
-      class="hero-button"
-      href="https://www.amazon.com/dp/B0HG4R8K2B"
-      target="_blank"
-      rel="noopener noreferrer">
-      COMPRAR EL HOYO 1 EN AMAZON
-    </a>
-
   </div>
+
 </header>
+
 
 <main>
 
-<section id="libro">
+<!-- =========================
+     INTRODUCCIÓN
+========================= -->
+
+<section class="intro" id="libro">
+
   <div class="wrap">
+
     <div class="card">
 
       <h2>
@@ -325,17 +407,101 @@ footer{
         eso me ayudó a jugar, golpe a golpe, los días de mi vida.»
       </div>
 
+      <p>
+        Porque todos tenemos un primer golpe.
+        Todos cometemos errores.
+        Todos buscamos una nueva oportunidad para volver a jugar.
+      </p>
+
     </div>
+
   </div>
+
 </section>
 
-<section class="about">
+
+<!-- =========================
+     TEMAS
+========================= -->
+
+<section class="themes">
+
   <div class="wrap">
+
+    <div class="card">
+
+      <div class="eyebrow">
+        El recorrido
+      </div>
+
+      <h2>
+        El golf es solamente el comienzo.
+      </h2>
+
+      <p>
+        Detrás de cada golpe hay una decisión.
+        Detrás de cada error, una enseñanza.
+        Y detrás de cada recorrido, una historia.
+      </p>
+
+    </div>
+
+    <div class="theme-grid">
+
+      <div class="theme">
+        <strong>El fracaso</strong>
+        <span>Aprender a mirar aquello que salió mal.</span>
+      </div>
+
+      <div class="theme">
+        <strong>La amistad</strong>
+        <span>Los vínculos que aparecen durante el recorrido.</span>
+      </div>
+
+      <div class="theme">
+        <strong>El amor</strong>
+        <span>Lo que elegimos cuidar y lo que podemos perder.</span>
+      </div>
+
+      <div class="theme">
+        <strong>Las decisiones</strong>
+        <span>Cada golpe abre una nueva línea de juego.</span>
+      </div>
+
+      <div class="theme">
+        <strong>La transformación</strong>
+        <span>Cuando el recorrido empieza a cambiar al jugador.</span>
+      </div>
+
+      <div class="theme">
+        <strong>La vida</strong>
+        <span>Porque al final, todos tenemos que jugar nuestro propio hoyo.</span>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     AUTOR
+========================= -->
+
+<section class="about">
+
+  <div class="wrap">
+
     <div class="author">
 
-      <div class="eyebrow">Sobre el autor</div>
+      <div class="eyebrow">
+        Sobre el autor
+      </div>
 
-      <h2>Gabriel Licera</h2>
+      <div class="author-name">
+        Gabriel Licera
+      </div>
 
       <p>
         Profesor de golf, maestro de ajedrez y emprendedor.
@@ -348,19 +514,32 @@ footer{
       </p>
 
     </div>
+
   </div>
+
 </section>
 
+
+<!-- =========================
+     CTA FINAL
+========================= -->
+
 <section class="final">
+
   <div class="wrap">
+
     <div class="card">
+
+      <div class="eyebrow">
+        El recorrido comienza acá
+      </div>
 
       <h2>
         El próximo golpe puede
         cambiarlo todo.
       </h2>
 
-      <p>
+      <p class="final-text">
         ¿Estás listo para empezar este recorrido?
       </p>
 
@@ -377,10 +556,13 @@ footer{
       </div>
 
     </div>
+
   </div>
+
 </section>
 
 </main>
+
 
 <footer>
   EL HOYO 1 · Gabriel Licera
